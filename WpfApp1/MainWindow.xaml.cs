@@ -148,7 +148,7 @@ namespace WpfApp1
         private void NodeParcel_Selected(object sender, RoutedEventArgs e)
         {
             var xDoc = new XmlDocument();
-            xDoc.Load("test.xml");
+            xDoc.Load(FilePath);
             XmlElement? xRoot = xDoc.DocumentElement;
             _currentChapter = "Parcel";
             var sectionName = "land_record";
@@ -163,7 +163,7 @@ namespace WpfApp1
         private void NodeObjectRealty_Selected(object sender, RoutedEventArgs e)
         {
             var xDoc = new XmlDocument();
-            xDoc.Load("test.xml");
+            xDoc.Load(FilePath);
             XmlElement? xRoot = xDoc.DocumentElement;
             _currentChapter = "ObjectRealty";
             var sectionName1 = "build_record";
@@ -180,7 +180,7 @@ namespace WpfApp1
         private void NodeSpatialData_Selected(object sender, RoutedEventArgs e)
         {
             var xDoc = new XmlDocument();
-            xDoc.Load("test.xml");
+            xDoc.Load(FilePath);
             XmlElement? xRoot = xDoc.DocumentElement;
             _currentChapter = "SpatialData";
             var sectionName = "spatial_data";
@@ -195,7 +195,7 @@ namespace WpfApp1
         private void NodeBound_Selected(object sender, RoutedEventArgs e)
         {
             var xDoc = new XmlDocument();
-            xDoc.Load("test.xml");
+            xDoc.Load(FilePath);
             XmlElement? xRoot = xDoc.DocumentElement;
             _currentChapter = "Bound";
             var sectionName = "municipal_boundary_record";
@@ -210,7 +210,7 @@ namespace WpfApp1
         private void NodeZone_Selected(object sender, RoutedEventArgs e)
         {
             var xDoc = new XmlDocument();
-            xDoc.Load("test.xml");
+            xDoc.Load(FilePath);
             XmlElement? xRoot = xDoc.DocumentElement;
             _currentChapter = "Zone";
             var sectionName = "zones_and_territories_record";
